@@ -1,0 +1,45 @@
+high Trees
+Problem Statement:
+
+There is a straight line which has N tree planted of different heights. Tree i has height h[i]. One day, the caretaker of the plantation became curious to know the maxium distance (j-i) between trees such that h[i]<=h[j].
+
+Since the number of trees are huge and it's nearly impossible to solve this task manually, he came to you for help. He will provide an array of length N where ith element of array is height of tree i. Find the max(j-i) such that h[i]<=h[j] and also print i and j for such position. Both i and j should be in 0 based index.
+
+It is guranteed that solution exists.
+If there are multiple i and j, print the one with lower value of j.
+
+
+Input Format:
+
+First line contains an integer N<=100000
+Second line contains N space separated integers where ith integer is height of tree i
+
+Output Format:
+
+First line contains max (j-i)
+Second line contains 2 integers i and j
+
+
+Sample Input 1:
+
+4
+3 1 4 2
+
+Sample Output 1:
+
+2
+0 2
+
+Explanation:
+
+Possible pairs based on 0 based index are: (0,2), (1,3). Both have difference of 2 units hence ans is (0,2) since it has lower j.
+
+Sample Input 2:
+
+4
+2 1 1 2
+
+Sample Output 2:
+
+3
+0 3
