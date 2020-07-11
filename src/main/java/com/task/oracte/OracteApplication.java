@@ -25,6 +25,7 @@ public class OracteApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		log.info("STARTING THE APPLICATION");
+		// XXX: https://stackoverflow.com/questions/60922845/maven-exec-plugin-with-preview-features	
 		SpringApplication.run(OracteApplication.class, args);
 		log.info("APPLICATION FINISHED");
 	}
