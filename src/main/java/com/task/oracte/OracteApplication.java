@@ -1,28 +1,17 @@
 package com.task.oracte;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.ExchangeStrategies;
 import org.springframework.web.reactive.function.client.WebClient;
-
-import de.vandermeer.asciitable.AsciiTable;
+import org.springframework.web.reactive.function.client.WebClientException;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -42,7 +31,11 @@ public class OracteApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) {
+		try {
 		fetcher.run(webClient(), consoleScanner(), System.out);
+		}catch (WebClientException e) {
+			log.error("Could not fetch foodtruck data, exiting");
+		}
 	}
 
 	@Bean
