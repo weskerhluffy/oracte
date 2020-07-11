@@ -1,25 +1,34 @@
 Overview  
  
-The goal of this is to write a simple command-line program that will print out a list of food trucks, given a source of food truck data from the San Francisco government’s API. Along with your code, readme, and installation instructions, we will also ask you to provide a brief write up discussing your thought process. 
+The goal of this is to write a simple command-line program that will print out a list of food trucks, 
+given a source of food truck data from the San Francisco government’s API. Along with your code, 
+readme, and installation instructions, we will also ask you to provide a brief write up discussing your thought process. 
   
 The Task  
  
 Data  
  
 The San Francisco government’s website has a public data source of food trucks 
-(https://data.sfgov.org/Economy-and-Community/Mobile-Food-Schedule/jjew-r69b). The data can be accessed in a number of forms, including JSON, CSV, and XML. How you access the data is up to you, but you can find some useful information about making an API request to this data source here (https://dev.socrata.com/foundry/data.sfgov.org/jjew-r69b  ) .  
+(https://data.sfgov.org/Economy-and-Community/Mobile-Food-Schedule/jjew-r69b). 
+The data can be accessed in a number of forms, including JSON, CSV, and XML. 
+How you access the data is up to you, but you can find some useful information about making an API request to
+ this data source here (https://dev.socrata.com/foundry/data.sfgov.org/jjew-r69b  ) .  
  
 The Problem  
  
-Write a command line program that prints out a list of food trucks that are open at the current date and current time, when the program is being run. So if I run the program at noon on a Friday, I should see a list of all the food trucks that are open then.  
+Write a command line program that prints out a list of food trucks that are open at the current date and current time, 
+when the program is being run. So if I run the program at noon on a Friday, I should see a list of all the food trucks that are open then.  
  
 Criteria  
  
 We will primarily evaluate programs on code quality and output correctness.  
  
-For quality, we expect code to be easy to read and maintain, performant, testable and reliable. You should submit code that you are proud to have written. However do not include tests in your submission.  
+For quality, we expect code to be easy to read and maintain, performant, testable and reliable. You should submit code that you are proud 
+to have written. However do not include tests in your submission.  
  
-Please display results in pages of 10 trucks. That is: if there are more than 10 food trucks open, the program should display the first 10, then wait for input from the user before displaying the next 10 (or fewer if there are fewer than 10 remaining), and so on until there are no more food trucks to display. Display the name and address of the trucks and sort the output alphabetically by name.  
+Please display results in pages of 10 trucks. That is: if there are more than 10 food trucks open, the program should display the first 10, 
+then wait for input from the user before displaying the next 10 (or fewer if there are fewer than 10 remaining), 
+and so on until there are no more food trucks to display. Display the name and address of the trucks and sort the output alphabetically by name.  
 
 
 Example  
@@ -59,12 +68,14 @@ A README file that contains instructions on how to do the following on Linux or 
 ○ run your program, with example commands on how to run it if necessary.  
 
 Your submission should not include any binary files or any executable files other than your code, such as .jar files.  
-(Note Oracle email server doesn’t allow .zip extension files, so we suggest you upload the zip file to a shared cloud storage and provide us the secure download link)
+(Note Oracle email server doesn’t allow .zip extension files, so we suggest you upload the zip file to a shared cloud storage and 
+provide us the secure download link)
 Submission Notes  
  
 We recommend you complete and return this project within 24 hours.   
  
-We don’t expect your write-up to take more than thirty minutes to complete. Therefore, keep your response high-level and not more than two paragraphs. Do spend time polishing and packaging up your submission so it is easy to install, run, and review.  
+We don’t expect your write-up to take more than thirty minutes to complete. Therefore, keep your response high-level and not more than two 
+paragraphs. Do spend time polishing and packaging up your submission so it is easy to install, run, and review.  
  
 
 Example stub

@@ -3,3 +3,9 @@ spring:
     max-in-memory-size: 100MB
   main:
     web-application-type: NONE
+logging:
+  level:
+    root: WARN
+# XXX: https://mkyong.com/spring-boot/spring-boot-custom-banner-example/
+# XXX: https://www.boraji.com/spring-boot-changing-the-default-banner-example
+
